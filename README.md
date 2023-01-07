@@ -81,6 +81,7 @@ NOT GATE :
 XOR GATE :
 
 <img width="157" alt="210804204-908a6987-8a7f-449d-b33b-42b08166e0d9" src="https://user-images.githubusercontent.com/118054670/211067911-0fb99182-1b1a-4f16-9bd8-d61c5a477b57.png">
+### OUTPUT : 
 
 ### RTL REALIZATION :
 
