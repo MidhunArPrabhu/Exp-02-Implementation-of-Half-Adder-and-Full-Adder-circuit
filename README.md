@@ -1,4 +1,4 @@
-# EXPERIMENT-02-IMPLEMENTATION-OF-HALF-ADDER-AND-FULL ADDER-CIRCUIT
+# EXPERIMENT-02
 
 # IMPLEMENTATION-OF-HALF-ADDER-AND-FULL-ADDER-CIRCUIT
 
@@ -7,8 +7,8 @@ To design a half adder and full adder circuit and verify its truth table in Quar
 
 ### EQUIPMENTS REQUIRED : 
 
-Hardware – PCs, Cyclone II , USB flasher  
-Software – Quartus prime  
+- Hardware – PCs, Cyclone II , USB flasher  
+- Software – Quartus prime  
 
 ##3 THEORY :
 Adders are digital circuits that carry out addition of numbers.
@@ -33,88 +33,89 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 #### Figure -02 FULL ADDER 
 
 ### PROCEDURE :
-
+```
 Connect the supply (+5V) to the circuit
 Switch ON the main switch
 If the output is 1, then the led glows.
+```
 ### 
 ### PROGRAM : 
-
+```python
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.  
 
 Developed by: MIDHUN AZHAHU RAJA P  
 RegisterNumber:  22008311
-
+```
 HALF ADDER :
-
+```python
 module threxp(A,B,Sum,Carry);  
 input A,B;   
 output Sum,Carry; 
 xor(Sum,A,B);  
 and(Carry,A,B);  
 endmodule
-
+```
 FULL ADDDER :  
-
+```
 module threxp(A,B,C,Sum,Carry);  
 input A,B,C;  
 output Sum,Carry;    
 assign Sum = ((A^B)^C);  
 assign Carry = ((A&B)|(B&C)|(C&A));   
 endmodule  
+```
+## LOGIC GATES : 
 
-### LOGIC GATES : 
-
-AND GATE :
+### AND GATE :
 
 <img width="145" alt="210804186-b2fd26ff-4908-4580-b064-b49bb33c4b6b" src="https://user-images.githubusercontent.com/118054670/211067110-3f48e804-9284-408a-ac7c-2c5d43cee25a.png">
 
-OR GATE :
+### OR GATE :
 
 <img width="162" alt="210804152-d3067756-db97-49b6-81f9-859224ab815e" src="https://user-images.githubusercontent.com/118054670/211066726-53d1cea4-2666-44cc-a9d0-6c6f868087ca.png">
 
 
-NOT GATE : 
+### NOT GATE : 
 
 <img width="153" alt="210804437-c8289936-6877-4420-ac8e-b6de9497de25" src="https://user-images.githubusercontent.com/118054670/211067802-a0a0d45d-573b-4899-8564-8d08a53f8425.png">
 
-XOR GATE :
+### XOR GATE :
 
 <img width="157" alt="210804204-908a6987-8a7f-449d-b33b-42b08166e0d9" src="https://user-images.githubusercontent.com/118054670/211067911-0fb99182-1b1a-4f16-9bd8-d61c5a477b57.png">
-### OUTPUT : 
 
-### RTL REALIZATION :
+## OUTPUT : 
 
-RTL REALIZATION FOR HALF ADDER :
+## RTL REALIZATION :
+
+### RTL REALIZATION FOR HALF ADDER :
 
 ![image](https://user-images.githubusercontent.com/118054670/211161751-572d5548-4bf1-41a8-b1fe-bd1505c21b69.png)
 
-RTL REALIZATION FOR FULL ADDER :
+### RTL REALIZATION FOR FULL ADDER :
 
 ![image](https://user-images.githubusercontent.com/118054670/211162748-d082d6ef-c27d-41ef-98ee-bc33b13db3b6.png)
 
-### TIMING DIAGRAM :
-
-TIMING DIAGRAM FOR HALF ADDER :
-
-![image](https://user-images.githubusercontent.com/118054670/211163927-b8461078-8b30-4899-8e05-c5bc087eb1c2.png)
-
-TIMING DIAGRAM FOR FULL ADDER :
-
-![image](https://user-images.githubusercontent.com/118054670/211163597-ebbccf9e-81ff-42d5-8a4d-08339498af8b.png)
 
 
+## TRUTH TABLE :
 
-
-### TRUTH TABLE :
-
-TRUTH TABLE FOR HALF ADDER :
+### TRUTH TABLE FOR HALF ADDER :
 
 ![half-adder2](https://user-images.githubusercontent.com/118054670/211164200-505cd797-c838-4090-9628-00952377db36.png)
 
-TRUTH TABLE FOR FULL ADDER :
+### TRUTH TABLE FOR FULL ADDER :
 
 ![full-adder2](https://user-images.githubusercontent.com/118054670/211164162-fa1e9a14-b88c-4b07-abe2-07ab62d789f1.png)
 
-### RESULT :
+## TIMING DIAGRAM :
+
+### TIMING DIAGRAM FOR HALF ADDER :
+![ha](https://user-images.githubusercontent.com/118054670/215306559-c0f8079c-85c3-438e-ad6b-8c5e57f5fb76.png)
+
+
+### TIMING DIAGRAM FOR FULL ADDER :
+
+![fa](https://user-images.githubusercontent.com/118054670/215306561-63759f27-3a5c-4424-b732-f012d8711f62.png)
+
+## RESULT :
 Thus The Half Adder And Full Adder Circuit Succesfully Implemented
